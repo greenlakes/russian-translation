@@ -26,3 +26,5 @@ production:
   <<: *default
   database: russian_translation/production
   template: template0
+  username: ubuntu
+password: 
