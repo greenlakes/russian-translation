@@ -12,8 +12,6 @@ default: &default
 
 development:
   <<: *default
-  adapter: postgresql
-  host: localhost
   database: russian_translation/development
   template: template0
  

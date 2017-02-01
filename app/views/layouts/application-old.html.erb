@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-  <head>
-    <title>RussianTranslation</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Pragprog Books Online Store</title>
+  <%= stylesheet_link_tag    "application", media: "all",
+    "data-turbolinks-track" => 'reload' %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= controller.controller_name %>">
+ <%=render 'layouts/header'%>
+ 
+    <span class="title"><%= @page_title %></span>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+ 
+    <div id="main">
+      <%= yield %>
+    </div>
+  </div>
+</body>
 </html>
+
+
+     

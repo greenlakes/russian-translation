@@ -14,7 +14,6 @@
 // supported directives.
 //
 //= require jquery
-//= require jquery-ui/effects/effect-blind
+//= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
