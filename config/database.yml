@@ -26,5 +26,3 @@ test:
 production:
   <<: *default
   database: russian-translation_production
-  username: shine
-  password: <%= ENV['SHINE_DATABASE_PASSWORD'] %>
