@@ -26,3 +26,5 @@ test:
 production:
   <<: *default
   database: russian-translation_production
+  username: postgres
+  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
